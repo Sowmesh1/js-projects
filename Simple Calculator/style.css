@@ -1,0 +1,30 @@
+body{
+    height: 100vh;
+    display: flex; /* by default flex-direction: row  */
+    flex-direction: row; 
+    justify-content: center; /*centers along main axis in this case its horizontal ,since slex direc is row */
+    align-items: center;/*centers along cross axis , in this case vertical */
+}
+/*body is a flex container  */
+/* all direct children of body is a flex item */
+/* display not a children of but a descendant body so not a flex item */
+
+.calc{
+    height: 50vh;
+    width: 40vh;
+    border-radius: 20px;
+    background-color: rgb(97, 97, 97);
+}
+
+.display{
+    height: 10vh;
+    width:40vh;
+    border-radius: 20px;
+background-color: rgb(194, 193, 193);
+}
+
+.button{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:5px;
+}
