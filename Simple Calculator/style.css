@@ -1,4 +1,5 @@
 body{
+    background-color: rgb(228, 153, 140);
     height: 100vh;
     display: flex; /* by default flex-direction: row  */
     flex-direction: row; 
@@ -10,21 +11,93 @@ body{
 /* display not a children of but a descendant body so not a flex item */
 
 .calc{
-    height: 50vh;
+    height: 80vh;
     width: 40vh;
     border-radius: 20px;
-    background-color: rgb(97, 97, 97);
+    background-color: rgb(255, 255, 255);
 }
 
 .display{
-    height: 10vh;
+    height: 15vh;
     width:40vh;
     border-radius: 20px;
-background-color: rgb(194, 193, 193);
+background-color: rgb(41, 41, 41);
+}
+.button_container{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 10px;
+}
+.button_container button{
+    background: transparent;
+    border: none;
+    font-weight: bold;
 }
 
-.button{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:5px;
+.bottom_buttons button{
+    background: transparent;
+    border: none;
+    font-weight: bold;
+}
+button:hover{
+background-color: black;
+color: white;
+}
+
+#num{
+    height: 90px;
+    width: 70px;
+   
+}
+
+#plus{
+    height: 90px;
+    width: 70px;
+    
+}
+#minus{
+    height: 90px;
+    width: 70px;
+}
+#mult{
+    height: 90px;
+    width: 70px;
+}
+#clear{
+    height: 90px;
+    width: 70px;
+}
+#percent{
+    height: 90px;
+    width: 70px;
+}
+#division{
+    height: 90px;
+    width: 70px;
+}
+#power{
+    height: 90px;
+    width: 70px;
+}
+#zero{
+    position:absolute;
+    left: 140px;
+    bottom: 110px;
+    height: 90px;
+    width: 110px;
+}
+#point{
+    position:absolute;
+     bottom: 110px;
+     left: 252.5px;
+    height: 90px;
+    width: 105px;
+}
+#equals{
+    position:absolute;
+     bottom: 110px;
+      left: 360px;
+    height:180px;
+    width: 70px;
 }
