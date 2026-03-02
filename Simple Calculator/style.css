@@ -12,19 +12,18 @@ body{
 
 .calc{
     height: 80vh;
-    width: 40vh;
+    width: 50vh;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
 }
 
 .display{
     height: 15vh;
-    width:40vh;
+    width:50vh;
     border-radius: 20px;
 background-color: rgb(41, 41, 41);
 }
 .button_container{
-    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 10px;
@@ -34,21 +33,13 @@ background-color: rgb(41, 41, 41);
     border: none;
     font-weight: bold;
 }
-
-.bottom_buttons button{
-    background: transparent;
-    border: none;
-    font-weight: bold;
-}
 button:hover{
 background-color: black;
 color: white;
 }
-
-#num{
+.num{
     height: 90px;
     width: 70px;
-   
 }
 
 #plus{
@@ -81,23 +72,17 @@ color: white;
     width: 70px;
 }
 #zero{
-    position:absolute;
-    left: 140px;
-    bottom: 110px;
     height: 90px;
     width: 110px;
 }
 #point{
-    position:absolute;
-     bottom: 110px;
-     left: 252.5px;
     height: 90px;
     width: 105px;
 }
 #equals{
-    position:absolute;
-     bottom: 110px;
-      left: 360px;
+    grid-row: span 2;
     height:180px;
     width: 70px;
+    background-color: black;
+    color: white;
 }
