@@ -76,8 +76,12 @@ num0.addEventListener("click",()=>{
 
 clear.addEventListener("click",()=>{
      operand1=0;
-     inputDisplay.remove();
+     inputDisplay.innerHTML="";
 });
+
+if(){
+    
+}
 
 equals.addEventListener("click",()=>{
 console.log(operand1);
