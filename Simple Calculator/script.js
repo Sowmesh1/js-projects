@@ -19,8 +19,8 @@ const equals=document.getElementById("equals");
 
 const inputDisplay=document.getElementById("inputDisplay");
 const Display=document.getElementById("Display");
-let operand1=0;
-let operand2=0;
+let operand1="";
+let operand2="";
 let operator="";
 
 num1.addEventListener("click",()=>{
@@ -86,18 +86,18 @@ console.log(operand2);
 let num1 = Number(operand2);
 let num2 = Number(operand1);
 if(operator=="+"){
-let result = eval("num1+num2");
+let result = num1+num2;
 console.log(result);
 Display.append(result);
 }
 else if(operator=="-"){
-    let result = eval("num1-num2");
+    let result = num1-num2;
 console.log(result);
 Display.append(result);
 }
 
 else if(operator=="X"){
-    let result = eval("num1*num2");
+    let result = num1*num2;
 console.log(result);
 Display.append(result);
 }
@@ -107,13 +107,13 @@ else if(operator=="/"){
         Display.append("Cannot divide by Zero");
     }
     else{
-    let result = eval("num1/num2");
+    let result =num1/num2;
 console.log(result);
 Display.append(result);
     }
 }
 else if(operator=="^"){
-    let result = eval("num1^num2");
+    let result = num1^num2;
 console.log(result);
 Display.append(result);
 }
