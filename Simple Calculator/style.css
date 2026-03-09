@@ -34,6 +34,9 @@ body{
     height: 20vh;
     width:50vh;
     border-radius: 20px;
+    text-align: end;
+    box-sizing: border-box;
+    color: white;
 background-color: rgb(41, 41, 41);
 }
 .button_container{

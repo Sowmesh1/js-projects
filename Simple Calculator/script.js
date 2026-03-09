@@ -18,10 +18,10 @@ const point=document.getElementById("point");
 const equals=document.getElementById("equals");
 
 const inputDisplay=document.getElementById("inputDisplay");
-const Display=document.getElementById("Dispaly");
+const Display=document.getElementById("Display");
 let operand1=0;
-let operand2;
-let operator;
+let operand2=0;
+let operator="";
 
 num1.addEventListener("click",()=>{
     inputDisplay.append(1);
@@ -76,13 +76,78 @@ num0.addEventListener("click",()=>{
 
 clear.addEventListener("click",()=>{
      operand1=0;
-     inputDisplay.innerHTML="";
+     inputDisplay.innerText="";
+     Display.innerText="";
 });
-
-if(){
-    
-}
 
 equals.addEventListener("click",()=>{
 console.log(operand1);
+console.log(operand2);
+let num1 = Number(operand2);
+let num2 = Number(operand1);
+if(operator=="+"){
+let result = eval("num1+num2");
+console.log(result);
+Display.append(result);
+}
+else if(operator=="-"){
+    let result = eval("num1-num2");
+console.log(result);
+Display.append(result);
+}
+
+else if(operator=="X"){
+    let result = eval("num1*num2");
+console.log(result);
+Display.append(result);
+}
+
+else if(operator=="/"){
+    if(num2==0){
+        Display.append("Cannot divide by Zero");
+    }
+    else{
+    let result = eval("num1/num2");
+console.log(result);
+Display.append(result);
+    }
+}
+else if(operator=="^"){
+    let result = eval("num1^num2");
+console.log(result);
+Display.append(result);
+}
+
+});
+
+plus.addEventListener("click", ()=>{
+operator="+";
+operand2=operand1;
+operand1=0;
+inputDisplay.append("+");
+})
+
+minus.addEventListener("click", ()=>{
+operator="-";
+operand2=operand1;
+operand1=0;
+inputDisplay.append("-");
+})
+mult.addEventListener("click", ()=>{
+operator="X";
+operand2=operand1;
+operand1=0;
+inputDisplay.append("X");
+})
+division.addEventListener("click", ()=>{
+operator="/";
+operand2=operand1;
+operand1=0;
+inputDisplay.append("/");
+})
+power.addEventListener("click", ()=>{
+operator="^";
+operand2=operand1;
+operand1=0;
+inputDisplay.append("^");
 })
