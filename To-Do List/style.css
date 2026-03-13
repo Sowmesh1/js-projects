@@ -1,0 +1,15 @@
+*{
+    box-sizing: border;
+}
+body{
+    background-color: rgb(207, 207, 252);
+}
+.add{
+    display: flex;
+    justify-content: center;
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 10vh;
+    height: 10vh;
+}
