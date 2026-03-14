@@ -3,13 +3,35 @@
 }
 body{
     background-color: rgb(207, 207, 252);
+    display: flex;
+    justify-content: center;
+
 }
 .add{
     display: flex;
     justify-content: center;
     position:fixed;
     bottom: 20px;
-    right: 20px;
+    right: 50px;
     width: 10vh;
     height: 10vh;
+}
+
+.task{
+    display: flex;
+    background-color: aliceblue;
+    position: relative;
+    top:150px;
+    width:60vw;
+    height:10vh;
+}
+
+input[type="checkbox"]{
+    position: absolute;
+    top:15px;
+}
+.delete{
+    background-color: aliceblue;
+    border: 0;
+    margin-left:auto;
 }
